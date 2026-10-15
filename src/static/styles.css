@@ -59,19 +59,107 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #dce3f0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #f5f7fc);
+  box-shadow: 0 3px 8px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #0066cc;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-left: 4px solid #3949ab;
+  border-radius: 0 8px 8px 0;
+  background-color: #eef1ff;
+}
+
+.participants-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #1a237e;
+}
+
+.participant-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background-color: #1a237e;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.participant-list {
+  margin: 8px 0 0;
+  padding-left: 0;
+  color: #4a5568;
+  font-size: 0.95rem;
+  list-style: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+  overflow-wrap: anywhere;
+}
+
+.delete-participant {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  border: 1px solid #e57373;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #c62828;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
+  color: #b71c1c;
+}
+
+.delete-participant:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.delete-participant svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.participant-list .no-participants {
+  color: #718096;
+  font-style: italic;
+  list-style: none;
 }
 
 .form-group {
